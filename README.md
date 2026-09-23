@@ -6,10 +6,10 @@ Repositório com os trabalhos e atividades práticas da disciplina de Informáti
 
 | Atividade | Descrição | Ferramenta | Status |
 |---|---|---|---|
-| **Aula 28 de agosto** | Análise do arquivo "Empresas com habilitação multimodal" (ANTT) — perguntas respondidas via fórmulas, tabela dinâmica e gráfico | Excel | ✅ Concluída |
+| **Aula 28 de agosto** | Análise do arquivo "Empresas com habilitação multimodal" (ANTT) — 2 perguntas respondidas via fórmulas, tabela dinâmica e gráfico | Excel | ✅ Concluída |
 | **Planilhas Eletrônicas e dados abertos** | Coleta de um dataset de dados abertos governamentais e elaboração de 5 perguntas respondidas via fórmulas e gráficos | Excel | ✅ Concluída |
 | **Dados abertos: análise no Power BI** | Reaproveitamento do dataset da atividade anterior, com as mesmas 5 perguntas respondidas via dashboard | Power BI | ⏳ Em andamento |
-|  |  |  | ⏳ Em andamento |
+|  |  |  |  |
 
 ## Estrutura do repositório
 
@@ -17,6 +17,7 @@ Repositório com os trabalhos e atividades práticas da disciplina de Informáti
 ├── README.md
 ├── Atividade_Inicial_de_2_Perguntas.xlsx         # Aula 28 de agosto
 └── Autos-de-Infracao-Ambiental-respondido.xlsx   # Planilhas Eletrônicas e dados abertos
+└──    
 ```
 
 ---
