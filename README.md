@@ -16,7 +16,7 @@ Repositório com os trabalhos e atividades práticas da disciplina de Informáti
 ```
 ├── README.md
 ├── Atividade_Inicial_de_2_Perguntas.xlsx         # Aula 28 de agosto
-└── Autos-de-Infracao-Ambiental-respondido.xlsx   # Planilhas Eletrônicas e dados abertos
+└── Planilhas_Eletrônicas_e_dados_abertos_de_5_perguntas.xlsx   # Planilhas Eletrônicas e dados abertos
 └──    
 ```
 
@@ -60,7 +60,7 @@ Base com 147.051 registros de autos de infração ambiental, contendo classe da 
    → FLORA lidera, com 68.720 infrações.
 
 2. **Quantos municípios causaram ao menos uma infração?**
-   → 649 municípios distintos.
+   → 650 municípios distintos.
 
 3. **Como evoluiu o número de infrações registradas por ano (2019–2026)?**
    → Pico em 2020, com 22.636 infrações. 2026 está incompleto (ano corrente).
@@ -73,5 +73,7 @@ Base com 147.051 registros de autos de infração ambiental, contendo classe da 
 
 ## Ferramentas utilizadas
 
-- Microsoft Excel — fórmulas `COUNTIF`/`CONT.SE`, `COUNTA`, `INDEX`/`MATCH`/`MAX`
-- Gráficos de barras e linha nativos do Excel
+-`CONT.SE` — contar ocorrências de um valor numa coluna (P1, P2, P5).
+- `CONTAR.VALORES` (COUNTA) — contar células preenchidas (P2 e P5).
+- `ÍNDICE + CORRESP + MÁXIMO` — achar o item com maior valor (P3).
+- `Colar especial (valores) + Classificar` — técnica manual para congelar resultados e ordenar do maior para o menor (P1, P2, P4).
