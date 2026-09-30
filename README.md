@@ -74,7 +74,6 @@ Base com 147.051 registros de autos de infração ambiental, contendo classe da 
    → "AIA pago", com 20.959 processos.
 
 ## Ferramentas utilizadas
-
 -`CONT.SE` — contar ocorrências de um valor numa coluna (P1, P2, P5).
 - `CONTAR.VALORES` (COUNTA) — contar células preenchidas (P2 e P5).
 - `ÍNDICE + CORRESP + MÁXIMO` — achar o item com maior valor (P3).
@@ -106,13 +105,14 @@ O painel também tem um cartão com o total de infrações e uma caixa de texto 
 ## Medidas DAX
 - Quantidade de Infrações = COUNTROWS ( 'Autos-de-Infracao-Ambiental-a-p' )
 - Quantidade de Municipios = DISTINCTCOUNT ( 'Autos-de-Infracao-Ambiental-a-p'[Municipio] )
+
 - COUNTROWS: número total de linhas (cada linha é uma infração).
 - DISTINCTCOUNT: número de valores únicos (cada município contado uma vez).
 
 ## Ferramentas utilizadas
--`Power Query` importar, tipar e limpar os dados.
--`Medidas DAX` (COUNTROWS, DISTINCTCOUNT): cálculos dos visuais.
--`Filtro N Superior`rankings (P4 e P5).
--`Visuais: barras` colunas, linhas, pizza e cartões.
+- `Power Query` importar, tipar e limpar os dados.
+- `Medidas DAX` (COUNTROWS, DISTINCTCOUNT): cálculos dos visuais.
+- `Filtro N Superior`rankings (P4 e P5).
+- `Visuais: barras` colunas, linhas, pizza e cartões.
 
  ---
