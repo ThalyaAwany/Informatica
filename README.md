@@ -106,13 +106,13 @@ O painel também tem um cartão com o total de infrações e uma caixa de texto 
 - Quantidade de Infrações = COUNTROWS ( 'Autos-de-Infracao-Ambiental-a-p' )
 - Quantidade de Municipios = DISTINCTCOUNT ( 'Autos-de-Infracao-Ambiental-a-p'[Municipio] )
 
-- COUNTROWS: número total de linhas (cada linha é uma infração).
-- DISTINCTCOUNT: número de valores únicos (cada município contado uma vez).
+- `COUNTROWS: número total de linhas (cada linha é uma infração).`
+- `DISTINCTCOUNT: número de valores únicos (cada município contado uma vez).`
 
 ## Ferramentas utilizadas
 - `Power Query` importar, tipar e limpar os dados.
 - `Medidas DAX` (COUNTROWS, DISTINCTCOUNT): cálculos dos visuais.
-- `Filtro N Superior`rankings (P4 e P5).
-- `Visuais: barras` colunas, linhas, pizza e cartões.
+- `Filtro N Superior` rankings (P4 e P5).
+- `Visuais` barras colunas, linhas, pizza e cartões.
 
  ---
