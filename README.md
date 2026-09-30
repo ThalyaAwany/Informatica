@@ -83,7 +83,8 @@ Base com 147.051 registros de autos de infração ambiental, contendo classe da 
 **Reaproveitamento do dataset de Autos de Infração Ambiental** 
 (mesma base de 147.051 registros), com as mesmas 5 perguntas respondidas em um painel no Power BI Desktop.
 
-##Visuais utilizados
+### Visuais utilizados
+
 Pergunta	Visual	Campos
 P1: Infrações por classe	Gráfico de barras	Classe Infração × Quantidade de Infrações
 P2: Quantos municípios	Cartão	Quantidade de Municípios
@@ -93,7 +94,7 @@ P5: Status mais comum	Gráfico de pizza (filtro N Superior)	Status × Quantidade
 
 O painel também tem um cartão com o total de infrações e uma caixa de texto explicando as medidas.
 
-##Medidas DAX
+## Medidas DAX
 Quantidade de Infrações = COUNTROWS ( 'Autos-de-Infracao-Ambiental-a-p' )
 Quantidade de Municipios = DISTINCTCOUNT ( 'Autos-de-Infracao-Ambiental-a-p'[Municipio] )
 COUNTROWS: número total de linhas (cada linha é uma infração).
@@ -104,3 +105,5 @@ DISTINCTCOUNT: número de valores únicos (cada município contado uma vez).
 -`Medidas DAX` (COUNTROWS, DISTINCTCOUNT): cálculos dos visuais.
 -`Filtro N Superior`rankings (P4 e P5).
 -`Visuais: barras` colunas, linhas, pizza e cartões.
+
+ ---
