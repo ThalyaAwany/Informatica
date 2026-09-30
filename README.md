@@ -47,6 +47,8 @@ Base com 1.382 empresas habilitadas como Operador de Transporte Multimodal (OTM)
 
 ---
 
+
+
 ## Planilhas Eletrônicas e Dados Abertos
 
 **Autos de Infração Ambiental (a partir de 2019)** — Estado de São Paulo
@@ -78,6 +80,10 @@ Base com 147.051 registros de autos de infração ambiental, contendo classe da 
 - `ÍNDICE + CORRESP + MÁXIMO` — achar o item com maior valor (P3).
 - `Colar especial (valores) + Classificar` — técnica manual para congelar resultados e ordenar do maior para o menor (P1, P2, P4).
 
+---  
+
+
+
 ## Dados Abertos: Analise PowerBI
 
 **Reaproveitamento do dataset de Autos de Infração Ambiental** 
@@ -100,7 +106,7 @@ Quantidade de Municipios = DISTINCTCOUNT ( 'Autos-de-Infracao-Ambiental-a-p'[Mun
 COUNTROWS: número total de linhas (cada linha é uma infração).
 DISTINCTCOUNT: número de valores únicos (cada município contado uma vez).
 
-##Ferramentas utilizadas
+## Ferramentas utilizadas
 -`Power Query` importar, tipar e limpar os dados.
 -`Medidas DAX` (COUNTROWS, DISTINCTCOUNT): cálculos dos visuais.
 -`Filtro N Superior`rankings (P4 e P5).
