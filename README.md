@@ -91,23 +91,23 @@ Base com 147.051 registros de autos de infração ambiental, contendo classe da 
 
 ### Visuais utilizados
 
-1. P1: Infrações por classe *Gráfico de barras* → Classe Infração × Quantidade de Infrações
+1. P1: Infrações por classe `*Gráfico de barras*` → Classe Infração × Quantidade de Infrações
 
-2. P2: Quantos municípios *Cartão* → Quantidade de Municípios
+2. P2: Quantos municípios `*Cartão*` → Quantidade de Municípios
 
-3. P3: Evolução por ano	*Gráfico de linhas* → Ano × Quantidade de Infrações
+3. P3: Evolução por ano	`*Gráfico de linhas*` → Ano × Quantidade de Infrações
 
-4. P4: Top 5 municípios	*Gráfico de colunas (filtro N Superior = 5)*	→ Municipio × Quantidade de Infrações
+4. P4: Top 5 municípios	`*Gráfico de colunas (filtro N Superior = 5)*`	→ Municipio × Quantidade de Infrações
 
-5. P5: Status mais comum *Gráfico de pizza (filtro N Superior)* → Status × Quantidade de Infrações
+5. P5: Status mais comum `*Gráfico de pizza (filtro N Superior)*` → Status × Quantidade de Infrações
    
 O painel também tem um cartão com o total de infrações e uma caixa de texto explicando as medidas.
 
 ## Medidas DAX
-Quantidade de Infrações = COUNTROWS ( 'Autos-de-Infracao-Ambiental-a-p' )
-Quantidade de Municipios = DISTINCTCOUNT ( 'Autos-de-Infracao-Ambiental-a-p'[Municipio] )
-COUNTROWS: número total de linhas (cada linha é uma infração).
-DISTINCTCOUNT: número de valores únicos (cada município contado uma vez).
+- Quantidade de Infrações = COUNTROWS ( 'Autos-de-Infracao-Ambiental-a-p' )
+- Quantidade de Municipios = DISTINCTCOUNT ( 'Autos-de-Infracao-Ambiental-a-p'[Municipio] )
+- COUNTROWS: número total de linhas (cada linha é uma infração).
+- DISTINCTCOUNT: número de valores únicos (cada município contado uma vez).
 
 ## Ferramentas utilizadas
 -`Power Query` importar, tipar e limpar os dados.
