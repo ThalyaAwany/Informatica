@@ -8,7 +8,7 @@ Repositório com os trabalhos e atividades práticas da disciplina de Informáti
 |---|---|---|---|
 | **Aula 28 de agosto** | Análise do arquivo "Empresas com habilitação multimodal" (ANTT) — 2 perguntas respondidas via fórmulas, tabela dinâmica e gráfico | Excel | ✅ Concluída |
 | **Planilhas Eletrônicas e dados abertos** | Coleta de um dataset de dados abertos governamentais e elaboração de 5 perguntas respondidas via fórmulas e gráficos | Excel | ✅ Concluída |
-| **Dados abertos: análise no Power BI** | Reaproveitamento do dataset da atividade anterior, com as mesmas 5 perguntas respondidas via dashboard | Power BI | ⏳ Em andamento |
+| **Dados abertos: análise no Power BI** | Reaproveitamento do dataset da atividade anterior, com as mesmas 5 perguntas respondidas via dashboard | Power BI | ✅ Concluída |
 |  |  |  |  |
 
 ## Estrutura do repositório
@@ -17,7 +17,7 @@ Repositório com os trabalhos e atividades práticas da disciplina de Informáti
 ├── README.md
 ├── Atividade_Inicial_de_2_Perguntas.xlsx         # Aula 28 de agosto
 └── Planilhas_Eletrônicas_e_dados_abertos_de_5_perguntas.xlsx   # Planilhas Eletrônicas e dados abertos
-└──    
+└── Dados_abertos_5_perguntas.pbix                              # Dados abertos: análise no Power BI
 ```
 
 ---
@@ -77,3 +77,30 @@ Base com 147.051 registros de autos de infração ambiental, contendo classe da 
 - `CONTAR.VALORES` (COUNTA) — contar células preenchidas (P2 e P5).
 - `ÍNDICE + CORRESP + MÁXIMO` — achar o item com maior valor (P3).
 - `Colar especial (valores) + Classificar` — técnica manual para congelar resultados e ordenar do maior para o menor (P1, P2, P4).
+
+## Dados Abertos: Analise PowerBI
+
+**Reaproveitamento do dataset de Autos de Infração Ambiental** 
+(mesma base de 147.051 registros), com as mesmas 5 perguntas respondidas em um painel no Power BI Desktop.
+
+##Visuais utilizados
+Pergunta	Visual	Campos
+P1: Infrações por classe	Gráfico de barras	Classe Infração × Quantidade de Infrações
+P2: Quantos municípios	Cartão	Quantidade de Municípios
+P3: Evolução por ano	Gráfico de linhas	Ano × Quantidade de Infrações
+P4: Top 5 municípios	Gráfico de colunas (filtro N Superior = 5)	Municipio × Quantidade de Infrações
+P5: Status mais comum	Gráfico de pizza (filtro N Superior)	Status × Quantidade de Infrações
+
+O painel também tem um cartão com o total de infrações e uma caixa de texto explicando as medidas.
+
+##Medidas DAX
+Quantidade de Infrações = COUNTROWS ( 'Autos-de-Infracao-Ambiental-a-p' )
+Quantidade de Municipios = DISTINCTCOUNT ( 'Autos-de-Infracao-Ambiental-a-p'[Municipio] )
+COUNTROWS: número total de linhas (cada linha é uma infração).
+DISTINCTCOUNT: número de valores únicos (cada município contado uma vez).
+
+##Ferramentas utilizadas
+-`Power Query` importar, tipar e limpar os dados.
+-`Medidas DAX` (COUNTROWS, DISTINCTCOUNT): cálculos dos visuais.
+-`Filtro N Superior`rankings (P4 e P5).
+-`Visuais: barras` colunas, linhas, pizza e cartões.
