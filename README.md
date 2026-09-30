@@ -91,13 +91,16 @@ Base com 147.051 registros de autos de infração ambiental, contendo classe da 
 
 ### Visuais utilizados
 
-Pergunta	Visual	Campos
-P1: Infrações por classe	Gráfico de barras	Classe Infração × Quantidade de Infrações
-P2: Quantos municípios	Cartão	Quantidade de Municípios
-P3: Evolução por ano	Gráfico de linhas	Ano × Quantidade de Infrações
-P4: Top 5 municípios	Gráfico de colunas (filtro N Superior = 5)	Municipio × Quantidade de Infrações
-P5: Status mais comum	Gráfico de pizza (filtro N Superior)	Status × Quantidade de Infrações
+1. P1: Infrações por classe *Gráfico de barras* → Classe Infração × Quantidade de Infrações
 
+2. P2: Quantos municípios *Cartão* → Quantidade de Municípios
+
+3. P3: Evolução por ano	*Gráfico de linhas* → Ano × Quantidade de Infrações
+
+4. P4: Top 5 municípios	*Gráfico de colunas (filtro N Superior = 5)*	→ Municipio × Quantidade de Infrações
+
+5. P5: Status mais comum *Gráfico de pizza (filtro N Superior)* → Status × Quantidade de Infrações
+   
 O painel também tem um cartão com o total de infrações e uma caixa de texto explicando as medidas.
 
 ## Medidas DAX
