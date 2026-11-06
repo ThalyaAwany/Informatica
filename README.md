@@ -6,7 +6,7 @@ Repositório com os trabalhos e atividades práticas da disciplina de Informáti
 
 | Atividade | Descrição | Ferramenta | Status |
 |---|---|---|---|
-| **1. Apresentação em equipe – 13/08** | Apresentação pessoal, interesses, experiências e perspectivas profissionais. | PowerPoint | ✅ Concluída |
+| **1. Apresentação Pessoal – 13/08** | Apresentação pessoal, interesses, experiências e perspectivas profissionais. | Canva | ✅ Concluída |
 | **2. Aula 28 de agosto** | Análise de dados de empresas habilitadas como Operador de Transporte Multimodal (ANTT), respondendo perguntas por meio de fórmulas, tabela dinâmica e gráficos. | Excel | ✅ Concluída |
 | **3. Planilhas Eletrônicas e Dados Abertos** | Coleta e análise de dados abertos sobre Autos de Infração Ambiental do Estado de São Paulo, respondendo 5 perguntas. | Excel | ✅ Concluída |
 | **4. Empresas Multimodais e Perguntas** | Análise dos dados de empresas habilitadas como Operador de Transporte Multimodal por meio de perguntas e visualizações. | Power BI | ✅ Concluída |
@@ -29,7 +29,10 @@ Repositório com os trabalhos e atividades práticas da disciplina de Informáti
 
 ---
 
-## 1. Apresentação em equipe – 13/08
+## 1. Apresentação Pessoal – 13/08
+
+<img width="955" height="533" alt="image" src="https://github.com/user-attachments/assets/f830eacc-aa1e-4832-b047-d1241f6b7525" />
+
 
 **Data de conclusão:** 13 de agosto de 2026.
 
@@ -47,6 +50,9 @@ Apresentação pessoal sobre minha trajetória, experiências, interesses e pers
 ---
 
 ## 2. Aula 28 de agosto
+
+![Uploading image.png…]()
+
 
 **Fonte dos dados:** [Operador de Transporte Multimodal – ANTT](https://dados.antt.gov.br/dataset/operador-transporte-multimodal/resource/9f76aca6-0e8d-4c13-8851-0ad8ced5c5b7)
 
