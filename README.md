@@ -51,8 +51,7 @@ Apresentação pessoal sobre minha trajetória, experiências, interesses e pers
 
 ## 2. Aula 28 de agosto
 
-![Uploading image.png…]()
-
+<img width="1729" height="711" alt="image" src="https://github.com/user-attachments/assets/9ed7f579-5ab1-4477-9956-97ace572bec0" />
 
 **Fonte dos dados:** [Operador de Transporte Multimodal – ANTT](https://dados.antt.gov.br/dataset/operador-transporte-multimodal/resource/9f76aca6-0e8d-4c13-8851-0ad8ced5c5b7)
 
@@ -79,6 +78,9 @@ Base com 1.382 empresas habilitadas como Operador de Transporte Multimodal (OTM)
 ---
 
 ## 3. Planilhas Eletrônicas e Dados Abertos
+
+<img width="1862" height="561" alt="image" src="https://github.com/user-attachments/assets/57a12939-df04-431c-9b97-d34d73577b79" />
+
 
 **Autos de Infração Ambiental (a partir de 2019)** — Estado de São Paulo.
 
@@ -114,6 +116,9 @@ Base com 147.051 registros de autos de infração ambiental, contendo classe da 
 
 ## 4. Empresas Multimodais e Perguntas
 
+<img width="1306" height="730" alt="image" src="https://github.com/user-attachments/assets/d2eb0620-8453-40a2-ae60-38161a1654cf" />
+
+
 **Base de dados:** Operadores de Transporte Multimodal (OTM) — ANTT.
 
 Continuação da análise dos dados de empresas multimodais, utilizando o Power BI para trabalhar com as informações e responder às perguntas propostas.
@@ -129,6 +134,9 @@ Continuação da análise dos dados de empresas multimodais, utilizando o Power 
 ---
 
 ## 5. Dados Abertos: Análise no Power BI
+
+<img width="1310" height="735" alt="image" src="https://github.com/user-attachments/assets/dcf14449-d122-497d-87df-f2c6f2674e18" />
+
 
 **Reaproveitamento do dataset de Autos de Infração Ambiental** (mesma base de 147.051 registros), com as mesmas 5 perguntas respondidas em um painel no Power BI Desktop.
 
