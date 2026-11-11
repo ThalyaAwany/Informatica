@@ -26,6 +26,8 @@ Repositório com os trabalhos e atividades práticas da disciplina de Informáti
 │   ├── Planilhas_Eletrônicas_e_dados_abertos_de_5_perguntas.xlsx
 │   ├── 4.Empresas Multimodais+Perguntas.pbix
 │   └── Dados_abertos_5_perguntas.pbix
+│   └── Biomas_Brasileiros_Dados_Abertos_Com_Imagens.pbit
+
 ```
 
 ---
@@ -174,33 +176,38 @@ O painel também tem um cartão com o total de infrações e uma caixa de texto 
 
 ## 6. Dados Abertos: Power BI com imagens
 
-<img width="1294" height="713" alt="image" src="https://github.com/user-attachments/assets/255ba445-3f17-4ac4-9b9f-3f512b221f1c" />
+<img width="1287" height="709" alt="image" src="https://github.com/user-attachments/assets/8098bf50-1a84-497c-b44b-18a6cd4a6bcd" />
 
 
-Biomas Brasileiros: Unidades de Conservação (CNUC, 2026) 
-**Fonte:**  https://dados.mma.gov.br/dataset/unidadesdeconservacao
+**Biomas Brasileiros: Unidades de Conservação (CNUC, 2026)**
+Fonte: [dados.mma.gov.br](https://dados.mma.gov.br/dataset/unidadesdeconservacao) — Cadastro Nacional de Unidades de Conservação (CNUC), arquivo `cnuc_2026_07.csv`. Licença Creative Commons Atribuição.
 
 Base com o cadastro das Unidades de Conservação (UCs) brasileiras, contendo nome da UC, esfera administrativa, categoria de manejo, UF, municípios abrangidos, área por bioma (Amazônia, Caatinga, Cerrado, Mata Atlântica, Pampa, Pantanal e Área Marinha), bioma declarado e grupo (Proteção Integral ou Uso Sustentável).
 
-Modelo de dados
+### Modelo de dados
 
-Fato_Unidades_Conservacao: tabela fato importada do CSV (delimitador ;, codificação 1252). No Power Query, os tipos foram ajustados e 17 colunas foram removidas, como Informações Gerais, Código UC, Categoria IUCN, atos legais, Plano de Manejo, Conselho Gestor, Órgão Gestor, Código WDPA, Sítios Ramsar, Mosaico e outras, para deixar só as colunas analíticas.
-Dim_Biomas: tabela dimensão criada manualmente no Power Query (#table) com os 7 biomas e uma URL de imagem para cada, usada para ilustrar o painel.
+- `Fato_Unidades_Conservacao` — tabela fato importada do CSV (delimitador `;`, codificação 1252). No Power Query, os tipos foram ajustados e 17 colunas foram removidas (Informações Gerais, Código UC, Categoria IUCN, atos legais, Plano de Manejo, Conselho Gestor, Órgão Gestor, Código WDPA, Sítios Ramsar, Mosaico e outras).
+- `Dim_Biomas` — tabela criada manualmente no Power Query (`#table`) com os 7 biomas e uma URL de imagem para cada.
 
-Painel (página “BIOMAS BRASILEIROS”)
+### Visuais utilizados
 
-Cartão: indicador geral de UCs.
-Gráfico de barras agrupadas, “Distribuição das UCs por bioma”: compara a quantidade de UCs por bioma declarado.
-Gráfico de pizza, “UCs por categoria de manejo”: mostra a proporção entre as categorias (Parque, Reserva, APA etc.).
-Segmentação de dados (slicer) por bioma declarado: filtra todos os visuais ao mesmo tempo.
-Tabela com imagens: lista cada bioma com sua foto, vinda da Dim_Biomas.
-Cabeçalho: caixa de texto “BIOMAS BRASILEIROS” sobre uma forma de fundo.
+1. **Total de UCs** — `CARTÃO` → Contagem de `ID_UC` (3.575 UCs).
+2. **Distribuição das UCs por bioma** — `GRÁFICO DE BARRAS` → Bioma declarado × Contagem de `ID_UC`.
+3. **UCs por categoria de manejo** — `GRÁFICO DE PIZZA` → Categoria de Manejo × Contagem de `ID_UC`.
+4. **Filtro de biomas** — `SEGMENTAÇÃO DE DADOS` → Bioma declarado (filtra o cartão, as barras e a pizza).
+5. **Biomas com imagens** — `TABELA` → Bioma × URL_Imagem (vindos da `Dim_Biomas`).
 
-Ferramentas utilizadas
+O painel também tem uma caixa de texto com o título "BIOMAS BRASILEIROS" sobre uma forma de fundo.
 
-Power Query (M): Csv.Document, Table.PromoteHeaders, Table.TransformColumnTypes, Table.RemoveColumns (importação, tipagem e limpeza) e #table (criação da dimensão).
-Modelagem: tabela fato + tabela dimensão de biomas.
-Visuais: cartão, barras agrupadas, pizza, segmentação e tabela.
+### Agregação
 
+- Contagem de `ID_UC` — número de linhas preenchidas (cada linha é uma UC).
+
+### Ferramentas utilizadas
+
+- `Power Query (M)` — importar, tipar e limpar os dados (`Csv.Document`, `Table.PromoteHeaders`, `Table.TransformColumnTypes`, `Table.RemoveColumns`) e criar a dimensão (`#table`).
+- `Modelagem` — tabela fato + tabela dimensão de biomas.
+- `Segmentação de dados` — filtro interativo por bioma.
+- `Visuais` — cartão, barras, pizza, segmentação e tabela com imagens.
 ---
 
