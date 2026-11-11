@@ -11,6 +11,7 @@ Repositório com os trabalhos e atividades práticas da disciplina de Informáti
 | **3. Planilhas Eletrônicas e Dados Abertos** | Coleta e análise de dados abertos sobre Autos de Infração Ambiental do Estado de São Paulo, respondendo 5 perguntas. | Excel | ✅ Concluída |
 | **4. Empresas Multimodais e Perguntas** | Análise dos dados de empresas habilitadas como Operador de Transporte Multimodal por meio de perguntas e visualizações. | Power BI | ✅ Concluída |
 | **5. Dados Abertos: Análise no Power BI** | Reaproveitamento do dataset de Autos de Infração Ambiental, com as mesmas 5 perguntas respondidas por meio de um dashboard interativo. | Power BI | ✅ Concluída |
+| **6. Dados Abertos: Power BI com imagens** | análise de dados de biomas brasileiros, com perguntas e uma tabela interativa com imagens.| Power BI | ✅ Concluída |
 
 ## Estrutura do repositório
 
@@ -168,6 +169,38 @@ O painel também tem um cartão com o total de infrações e uma caixa de texto 
 - `Medidas DAX` (COUNTROWS, DISTINCTCOUNT) — cálculos dos visuais.
 - `Filtro N Superior` — rankings (P4 e P5).
 - `Visuais` — barras, colunas, linhas, pizza e cartões.
+
+---
+
+## 6. Dados Abertos: Power BI com imagens
+
+<img width="1294" height="713" alt="image" src="https://github.com/user-attachments/assets/255ba445-3f17-4ac4-9b9f-3f512b221f1c" />
+
+
+Biomas Brasileiros: Unidades de Conservação (CNUC, 2026) 
+**Fonte:**  https://dados.mma.gov.br/dataset/unidadesdeconservacao
+
+Base com o cadastro das Unidades de Conservação (UCs) brasileiras, contendo nome da UC, esfera administrativa, categoria de manejo, UF, municípios abrangidos, área por bioma (Amazônia, Caatinga, Cerrado, Mata Atlântica, Pampa, Pantanal e Área Marinha), bioma declarado e grupo (Proteção Integral ou Uso Sustentável).
+
+Modelo de dados
+
+Fato_Unidades_Conservacao: tabela fato importada do CSV (delimitador ;, codificação 1252). No Power Query, os tipos foram ajustados e 17 colunas foram removidas, como Informações Gerais, Código UC, Categoria IUCN, atos legais, Plano de Manejo, Conselho Gestor, Órgão Gestor, Código WDPA, Sítios Ramsar, Mosaico e outras, para deixar só as colunas analíticas.
+Dim_Biomas: tabela dimensão criada manualmente no Power Query (#table) com os 7 biomas e uma URL de imagem para cada, usada para ilustrar o painel.
+
+Painel (página “BIOMAS BRASILEIROS”)
+
+Cartão: indicador geral de UCs.
+Gráfico de barras agrupadas, “Distribuição das UCs por bioma”: compara a quantidade de UCs por bioma declarado.
+Gráfico de pizza, “UCs por categoria de manejo”: mostra a proporção entre as categorias (Parque, Reserva, APA etc.).
+Segmentação de dados (slicer) por bioma declarado: filtra todos os visuais ao mesmo tempo.
+Tabela com imagens: lista cada bioma com sua foto, vinda da Dim_Biomas.
+Cabeçalho: caixa de texto “BIOMAS BRASILEIROS” sobre uma forma de fundo.
+
+Ferramentas utilizadas
+
+Power Query (M): Csv.Document, Table.PromoteHeaders, Table.TransformColumnTypes, Table.RemoveColumns (importação, tipagem e limpeza) e #table (criação da dimensão).
+Modelagem: tabela fato + tabela dimensão de biomas.
+Visuais: cartão, barras agrupadas, pizza, segmentação e tabela.
 
 ---
 
